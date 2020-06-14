@@ -173,4 +173,15 @@ def file_words(fname):
     
 print(file_words('example.txt'))
 
-    
+#19. delete a file
+
+#To delete a file, you must import the OS module, and run its os.remove() function:
+import os 
+os.remove('third.txt')
+
+#20. delete an entire folder
+
+#to delete an entire folder, use the os.rmdir() method
+#Note: You can only remove empty folders.
+import os
+os.rmdir('sample') 
