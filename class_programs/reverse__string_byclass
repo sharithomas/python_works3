@@ -1,0 +1,13 @@
+#10.  Write a Python class to reverse a string word by word
+class Reverse:
+    string_out=""
+    def __init__(self,string):
+        self.string_list=string.split(" ") #divide string word by word and save as a list ie,#["hai","am","python"]
+    def _reverse(self):
+        for i in range(len(self.string_list)-1,-1,-1): # take each word from list from last to 1st word ie, [python,am,hai] 
+            self.string_out=self.string_out+" "+self.string_list[i]#make string by concatenating list words in reverse order
+        return self.string_out                                      #ie, "python am hai"
+string=input("enter a string word by word")
+print("original string",string) #"hai am python"
+new_class=Reverse(string)
+print("output string  word by word reverse: ",new_class._reverse())
