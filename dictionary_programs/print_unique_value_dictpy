@@ -1,0 +1,11 @@
+# Write a Python program to print all unique values in a dictionary
+
+dictionary={"data1":"S001", "data2": "S002", "data3": "S001", "data4": "S005", "data5":"S005", "data6":"S009","data7":"S007"}
+list1=[]
+#check eacch values from dictionary and append to alist if it is unique
+for v in dictionary.values():
+    if v not in list1:
+        list1.append(v)
+print("unique values from dictionary\n")
+for i in list1:
+    print(i,end=" ")
