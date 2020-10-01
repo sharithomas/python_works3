@@ -1,0 +1,6 @@
+#  Write a Python script to merge two Python dictionaries
+
+d1={1:"apple",2:"orange",3:"kiwi"}
+d2={5:"pineapple",6:"grapes"}
+d1.update(d2)
+print("merged dictionary", d1)
