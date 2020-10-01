@@ -1,0 +1,13 @@
+#8.Write a Python class named Rectangle constructed by a length and width and a method which will compute the area of a rectangle
+class Rectangle:
+    def __init__(self,l,w):
+        self.length=l
+        self.width=w
+    def area(self):
+        print("Area of rectangle=",2*self.length*self.width)
+        
+length=int(input("enter length of rectangle"))
+width=int(input("enter width of rectangle"))
+
+new_rectangle=Rectangle(length,width)
+new_rectangle.area()
