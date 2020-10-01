@@ -1,0 +1,11 @@
+#11. Write a Python class to implement pow(x, n)
+class Power:
+    def __init__(self,x,n):
+        self.x=x
+        self.n=n
+    def power(self):
+        return self.x**self.n
+x=int(input("enter x:"))
+n=int(input("enter n:"))
+new_class=Power(x,n)
+print("{}^{}=".format(x,n),new_class.power())
