@@ -1,0 +1,7 @@
+# Write a NumPy program to create a vector with values ranging from 15 to 55 and 
+
+#print all values except the first and last
+import numpy as np
+array=np.arange(15,56)
+print("original array\n",array)
+print("array values except first and last\n",array[1:-1])
